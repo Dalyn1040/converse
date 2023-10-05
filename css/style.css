@@ -1,11 +1,16 @@
 *{
     padding: 0;
     margin: 0;
+    font-weight: normal;
+}
+ul{
+    text-decoration: none;
+    list-style: none;
 }
 
 /* font*/
 @font-face {
-    font-family: 'BigNoodleTitling';
+    font-family: 'Big';
     src: url('BigNoodleTitling.eot');
     src: url('BigNoodleTitling.eot?#iefix') format('embedded-opentype'),
         url('BigNoodleTitling.woff2') format('woff2'),
@@ -15,5 +20,94 @@
     font-style: normal;
     font-display: swap;
 }
+
+header{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/fond.jpg") center;
+    background-size: cover;
+}
+
+header nav{
+    position: fixed;
+    top: 50%;
+    left: 5%;
+    font-family: "Big";
+    background-color: rgb(255, 255, 255,0.7) ;
+}
+
+header div{
+    width: 20vw;
+    height: 20vw;
+    position: relative;
+}
+
+header div img {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+header nav ul li{
+    border-bottom: 2px solid black;
+    padding: 10px 20px;
+}
+header nav ul li:last-of-type{
+    border-bottom: none;
+}
+
+
+header nav ul li a{
+    text-transform: uppercase;
+    color: black;
+    font-family: "Big";
+    font-size: 20px;
+    text-decoration: none;
+
+}
+
+main{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+ section{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid green;
+
+}
+
+.maman{
+    margin: 20px;
+}
+
+main section div img{
+    width: 200px;
+    height: 200px; 
+}
+main section div h2{
+    font: "Big";
+    text-transform: uppercase;
+    font-size: medium;
+    font-weight: bold;
+}
+
+footer{
+    height: 40vh;
+    display: flex;
+    background: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+footer div {
+    
+}
+
 
 
