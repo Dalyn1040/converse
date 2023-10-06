@@ -81,15 +81,51 @@ main{
     border: 2px solid green;
 
 }
-
 .maman{
     margin: 20px;
+    width: 200px;
 }
 
-main section div img{
+section div div{
     width: 200px;
-    height: 200px; 
+    height: 200px;
+
 }
+
+main section div div img{
+    width: 100%;
+}
+
+
+section>div>div>div{
+    border:2px;
+    background: rgba(0,0,0,0.5);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+} 
+
+.haut>div{
+    transform: translateY(-100%);
+}
+
+.haut:hover>div{
+    transform: translateX();
+}
+
+.droite>div{
+    transform: translateY(+100%);
+}
+.droite:hover>div{
+    transform: translate();
+}
+
+
 main section div h2{
     font: "Big";
     text-transform: uppercase;
@@ -98,14 +134,31 @@ main section div h2{
 }
 
 footer{
-    height: 40vh;
     display: flex;
     background: black;
     color: white;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    padding: 150px 0;
 }
-footer div {
+.coordonnees{
+    display: flex;
+    margin-bottom: 50px;
+
+}
+.bloc-g{
+    border-right: 2px solid white;
+    padding-right: 25px;
+}
+.bloc-d{
+    padding-left: 2px solid white;
+    flex-direction: column;
+    justify-content: center;
+    padding left: 25px;
+
+
+}
+.reseaux a{
     
 }
 
